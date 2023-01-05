@@ -15,7 +15,7 @@ export let Personne ={
     }
 }
 
-export let Lieu ={
+export let maison ={
     nom : 'maison',
     personnes : []
 }
@@ -23,4 +23,11 @@ export let Lieu ={
 export let outil = {
     nom : 'couteau',
     action : 'coupé'
+}
+
+export let epicerie = {
+    nom : 'epicerie',
+    personnes : [],
+    panier : [],
+    ingrédients : ['oignon','oeuf','epice','fromage','salami']
 }
