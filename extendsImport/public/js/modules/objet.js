@@ -1,6 +1,6 @@
 export let Personne ={
     nom : 'Oussama',
-    lieu :'maison',
+    lieu :'lieu',
     argent : 50000,
     mainDroite : [],
     mainGauche : [],
@@ -11,7 +11,7 @@ export let Personne ={
         this.argent-=article.prix
     },
     couper(ingredient, outil){
-
+        ingredient=outil
     }
 }
 
