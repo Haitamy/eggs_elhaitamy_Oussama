@@ -40,3 +40,14 @@ export let poele ={
         }, 4000)
     }
 }
+
+export let bol ={
+    contenu : [],
+    melanger(nomMelange){
+        let newMelange = {
+            nom : nomMelange,
+            etat : 'pas cuit'
+        }
+        this.contenu = [newMelange]
+    }
+}
