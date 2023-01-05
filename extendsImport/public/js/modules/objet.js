@@ -5,10 +5,10 @@ export let Personne ={
     mainDroite : [],
     mainGauche : [],
     seDeplacer(lieu){
-
+        this.lieu = lieu
     },
     payerArticle(article){
-
+        this.argent-=article.prix
     },
     couper(ingredient, outil){
 
