@@ -28,6 +28,15 @@ export let outil = {
 export let epicerie = {
     nom : 'epicerie',
     personnes : [],
-    panier : [],
+    panier : [{ type: "panier", contenu: [] }],
     ingrédients : ['oignon','oeuf','epice','fromage','salami']
+}
+
+export let poele ={
+    contenu : [],
+    cuir(){
+        setTimeout(()=> {
+            this.contenu[0].etat='cuit'
+        }, 4000)
+    }
 }
