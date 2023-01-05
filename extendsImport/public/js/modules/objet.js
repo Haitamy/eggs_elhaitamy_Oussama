@@ -28,7 +28,7 @@ export let outil = {
 export let Epicerie = {
     nom : 'epicerie',
     personnes : [],
-    paniers : { type: "panier", contenu: [] },
+    paniers : [{ type: "panier", contenu: [] }],
     ingrédients : ['oignon','oeuf','epice','fromage','salami']
 }
 
