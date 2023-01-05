@@ -25,10 +25,10 @@ export let outil = {
     action : 'coupé'
 }
 
-export let epicerie = {
+export let Epicerie = {
     nom : 'epicerie',
     personnes : [],
-    panier : [{ type: "panier", contenu: [] }],
+    paniers : { type: "panier", contenu: [] },
     ingrédients : ['oignon','oeuf','epice','fromage','salami']
 }
 
