@@ -6,9 +6,21 @@ export let Personne ={
     mainGauche : [],
     seDeplacer(lieu){
 
-    }
-    
+    },
+    payerArticle(article){
 
+    },
+    couper(ingredient, outil){
+
+    }
 }
 
-export let Lieu
+export let Lieu ={
+    nom : 'maison',
+    personnes : []
+}
+
+export let outil = {
+    nom : 'couteau',
+    action : 'coupé'
+}
