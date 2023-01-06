@@ -5,9 +5,9 @@ import { goingTo, courses,payerCourses,mettreDansBol,rendrePanier } from "./modu
 goingTo(maison)
 //aller epicerie
 goingTo(Epicerie)
-//prendre panier
+//prendre panier en main droite
 Personne.mainDroite.push(Epicerie.paniers);
-//mettre articles dans le panier
+//mettre articles dans le panier avec la main gauche
 courses(Epicerie.ingrédients)
 //Payer les courses
 payerCourses(Personne.mainDroite[0][0].contenu)
@@ -19,4 +19,6 @@ mettreDansBol(Personne.mainDroite[0][0].contenu)
 goingTo(Epicerie)
 //rendre le panier
 rendrePanier(Personne.mainDroite)
+//retourner à la maison
+goingTo(maison)
 

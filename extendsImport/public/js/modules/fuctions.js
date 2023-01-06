@@ -8,7 +8,9 @@ export function goingTo(endroit) {
 
 export function courses(prendreIngredient) {
   for (let i = 0; i < prendreIngredient.length; i++) {
-    Personne.mainDroite[0][0].contenu.push(prendreIngredient[i]);
+    Personne.mainGauche.push(prendreIngredient[i])
+    Personne.mainDroite[0][0].contenu.push(Personne.mainGauche[0]);
+    Personne.mainGauche.pop()
     console.log(
       `Vous avez mis ${Personne.mainDroite[0][0].contenu[i]} dans le panier`
     );
