@@ -1,4 +1,4 @@
-import { Personne,bol } from "./objet.js";
+import { Personne,bol, Epicerie } from "./objet.js";
 import { oignon,oeuf,fromage,epice,beurre } from "./instances.js";
 
 export function goingTo(endroit) {
@@ -58,4 +58,10 @@ export function mettreDansBol(contenuPanier) {
         console.log(`${contenuPanier[i]} a été mis dans le bol`);
     }
     contenuPanier = []
+}
+
+export function rendrePanier(lacherPanier){
+    lacherPanier =[]
+    Epicerie.paniers.unshift('panier')
+    console.log(`le panier a été rendu`);
 }
