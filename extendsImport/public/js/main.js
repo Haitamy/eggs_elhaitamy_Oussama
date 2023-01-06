@@ -1,19 +1,14 @@
 
 import { oignon,oeuf,fromage,epice,beurre } from "./modules/instances.js";
 import { Personne,Epicerie, maison } from "./modules/objet.js";
-import { goingTo } from "./modules/fuctions.js";
+import { goingTo, courses } from "./modules/fuctions.js";
 
 goingTo(maison)
 goingTo(Epicerie)
 Personne.mainDroite.push(Epicerie.paniers);
 console.log(`${Personne.nom} a pris un ${Epicerie.paniers[0].type}`);
 
-for (let i = 0; i < Epicerie.ingrédients.length; i++) {
-  Personne.mainDroite[0][0].contenu.push(Epicerie.ingrédients[i]);
-  console.log(
-    `Vous avez mis ${Personne.mainDroite[0][0].contenu[i]} dans le panier`
-  );
-}
+courses(Epicerie.ingrédients)
 let contenuPanier = Personne.mainDroite[0][0].contenu
 console.log(contenuPanier);
 for (let i = 0; i < contenuPanier.length; i++) {
