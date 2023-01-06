@@ -1,4 +1,4 @@
-import { Ingrédients } from "./class";
+import { Ingrédients } from "./class.js"
 
 export let oignon = new Ingrédients('oignon','entier',8)
 export let oeuf = new Ingrédients('oeuf','entier',4)

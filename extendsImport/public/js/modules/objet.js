@@ -1,7 +1,7 @@
 export let Personne ={
     nom : 'Oussama',
     lieu :'lieu',
-    argent : 50000,
+    argent : 50,
     mainDroite : [],
     mainGauche : [],
     seDeplacer(lieu){
@@ -29,7 +29,7 @@ export let Epicerie = {
     nom : 'epicerie',
     personnes : [],
     paniers : [{ type: "panier", contenu: [] }],
-    ingrédients : ['oignon','oeuf','epice','fromage','salami']
+    ingrédients : ['oignon','oeuf','epice','fromage','beurre']
 }
 
 export let poele ={
